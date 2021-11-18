@@ -1,1 +1,1 @@
-Carpeta que contiene los datos del scateringg elastic
+# Carpeta que contiene los datos del scateringg elastic
