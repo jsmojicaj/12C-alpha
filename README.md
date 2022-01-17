@@ -2,7 +2,7 @@
 ---
 
 
-Codigo de python en Google Colab [SeccionNuclear.ipyn](https://colab.research.google.com/github/krishnamoji/12C-alpha/blob/main/SeccionNuclear.ipynb)
+Codigo de python en Google Colab [SeccionNuclear_alfa_12C.ipyn](https://github.com/krishnamoji/12C-alpha/blob/main/Codigos/SeccionNuclear_alfa_12C.ipynb)
 
 Los datos experimentales y sus respectivos artículos pueden ser consultados en [NRV](http://nrv.jinr.ru/nrv/webnrv/expdata/?tab=elastic)
 
