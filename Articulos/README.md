@@ -1,3 +1,6 @@
+## Documentos y Artículos
+---
+
 Esta carpeta contiene los articulos utilzados en este proyecto
 
 [1] S.M. Smith and G. Tibell and A.A. Cowley and D.A. Goldberg and H.G. Pugh and W. Reichart and N.S. Wall. (1973). The (α, α), (α, α′) and (α, 3He) reactions on 12C at 139 MeV. *Nuclear Physics A, 207*(2), 273-288. [10.1016/0375-9474(73)90347-3](https://doi.org/10.1016/0375-9474(73)90347-3) 
