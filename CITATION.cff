@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Si usa este codigo, por favor citelo."
+authors:
+- family-names: "Jonnatan "
+  given-names: "Pereira B."
+- family-names: "Sebastian"
+  given-names: "Mojica"
+- family-names: "Sebastian"
+  given-names: "Aguilera Novoa"
+title: "12C-alpha"
+version: 1.0.0
+doi: 10.5281/zenodo.1234
+date-released: 2022-01-17
+url: "https://github.com/krishnamoji/12C-alpha"
