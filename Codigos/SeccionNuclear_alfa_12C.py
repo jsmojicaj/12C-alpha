@@ -15,9 +15,6 @@ import numpy as np
 from scipy.special import legendre
 from scipy import linalg as lg
 import matplotlib as mpl
-from IPython.display import clear_output
-
-clear_output()
 
 
 # # Clase
