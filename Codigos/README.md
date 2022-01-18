@@ -6,6 +6,8 @@ Se puede ejecutar desde el notebook [SeccionNuclear](https://github.com/krishnam
 
 Para ejecutar el codigo primero se deben cargar los datos experimentales y después se debe ejecutar la funcion **Function** 
 
+[Descargar repositorio](https://github.com/krishnamoji/12C-alpha/archive/refs/heads/main.zip)
+
 ```python
 Datos12C = np.loadtxt(DireccionDatos)[:,0:2]
 Function(Ab=12, Zb=6, Ap=4, Zp=2, E=139, parametros=[108.1, 1.22, 0.76, 16.9, 1.85, 0.47, 1.26 ], Datos=Datos12C, ylim=(0.01,100), element='C')
