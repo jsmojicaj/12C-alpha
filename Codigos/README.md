@@ -19,6 +19,10 @@ Primero se descarga el repositorio desde la página del repositorio, [archivo co
 ```linux
 git init
 git clone https://github.com/krishnamoji/12C-alpha.git
+```
+Para ejecutar el código ejecute el siguiente comando en una temrinal de linux
+
+```linux
 cd 12C-alpha/Codigos/
 pip install -r librerias.txt
 python3 SeccionNuclear_alfa_12C.py
