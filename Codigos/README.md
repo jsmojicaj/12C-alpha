@@ -8,7 +8,7 @@ Para ejecutar el codigo primero se deben cargar los datos experimentales y despu
 
 <h3> Ejecución local </h3>
 
-[Descargar repositorio](https://github.com/krishnamoji/12C-alpha/archive/refs/heads/main.zip)
+Primero se obtiene el repositorio por medio de este [archivo comprimido](https://github.com/krishnamoji/12C-alpha/archive/refs/heads/main.zip) o desde la linea de comando:
 
 ```linux
 git init
