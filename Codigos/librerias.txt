@@ -1,3 +1,4 @@
 mpmath
 scipy
+numpy
 matplotlib
