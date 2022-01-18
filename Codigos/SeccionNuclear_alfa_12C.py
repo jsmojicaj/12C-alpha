@@ -8,9 +8,7 @@
 # In[142]:
 
 
-import time, datetime, os
-os.system('pip install -r librerias.txt')
-
+import time, datetime
 import matplotlib.pyplot as plt
 from mpmath import *
 import numpy as np
