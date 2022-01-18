@@ -12,12 +12,15 @@ Function(Ab=12, Zb=6, Ap=4, Zp=2, E=139, parametros=[108.1, 1.22, 0.76, 16.9, 1.
 ```
 Donde **A** y **Z** son los números de masa y atomicos, el indice **n** y **p** hacen referencia a si son del balnco o del proyectil; **E** es la energía de colisión; **parametros** es la lista de los coeficientes de ajuste del modelo óptico (potencial complejo de tipo Wood-Saxon); **Datos** son los datos experimentales extraidos de [NRV](http://nrv.jinr.ru/nrv/webnrv/expdata/?tab=elastic); **ylim** es el rango en el que se grafica la función; **element** es el simbolo del elemento objetivo.
 
-<h3> Ejecución local </h3>
+<h3> Ejecución Local </h3>
 
-Primero se obtiene el repositorio por medio de este [archivo comprimido](https://github.com/krishnamoji/12C-alpha/archive/refs/heads/main.zip), o desde la linea de comando en una carpeta seleccionada:
+Primero se descarga el repositorio desde la página del repositorio, [archivo comprimido](https://github.com/krishnamoji/12C-alpha/archive/refs/heads/main.zip), o desde la linea de comando:
 
 ```linux
 git init
-git pull https://github.com/krishnamoji/12C-alpha.git
+git clone https://github.com/krishnamoji/12C-alpha.git
+pip install -r librerias.txt
 ```
+
+Para ejecutar el 
 
