@@ -6,7 +6,7 @@ Se puede ejecutar desde el notebook [SeccionNuclear](https://github.com/krishnam
 
 Para ejecutar el codigo primero se deben cargar los datos experimentales y después se debe ejecutar la funcion **Function** 
 
-<h2> Descarga </h2>
+<h2> Ejecución local </h2>
 
 [Descargar repositorio](https://github.com/krishnamoji/12C-alpha/archive/refs/heads/main.zip)
 
