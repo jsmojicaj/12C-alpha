@@ -5,6 +5,7 @@ Este repositorio contiene el código realizado para modelar la colisión entre �
 
 Los datos experimentales y sus respectivos artículos pueden ser consultados en [NRV](http://nrv.jinr.ru/nrv/webnrv/expdata/?tab=elastic).
 
+[Instrucciones para ejecutar el código localmente](https://github.com/krishnamoji/12C-alpha/blob/main/Codigos/README.md)
 
 # References
 
