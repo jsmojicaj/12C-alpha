@@ -146,7 +146,7 @@ class Interaccion():
 
 # ## Plot Function
 
-# In[80]:
+# In[95]:
 
 
 def Plot(theta, y1, title, ylim, parametros, Datos=[], savfig=str(datetime.datetime.now().second)):
@@ -163,9 +163,9 @@ def Plot(theta, y1, title, ylim, parametros, Datos=[], savfig=str(datetime.datet
   plt.grid(True)
   plt.legend(title=r'$\bf{Datos}$') #titulo del legend
   plt.ylim(ylim); plt.xlim((0,80))
-  plt.xlabel('Angulo ($^\circ$)'); plt.ylabel('Sección Eficaz')
+  plt.xlabel('Angulo ($deg$)'); plt.ylabel(r'Sección Eficaz $(\frac{d\sigma}{d\Omega})/(\frac{d\sigma}{d\Omega})_{RUTH}$')
   plt.savefig('./Imagenes/Colisión-alpha-'+savfig)
-  plt.show()
+  #plt.show()
   
 
 
@@ -185,12 +185,19 @@ def Function(Ab=12,Zb=6,Ap=4,Zp=2,E=139,parametros=[108.1, 1.22, 0.76, 16.9, 1.8
     theta = np.linspace(0.1,np.pi/2,500)
     seccion = potencial.Seccion(theta)
     
-    Plot(theta, seccion, r'Colisión elástica $\alpha$ - $^{'+str(Ab)+'}'+element+'$ a {0} MeV'.format(alpha.E), ylim, parametros, Datos, element)
+    Plot(theta, seccion, r'Colisión elástica $\alpha$ - $^{'+str(Ab)+'}'+element+'$ a {0} MeV'.format(alpha.E), ylim, parametros, Datos, element+str(E))
 
 
 # # Resultados
 
 # ## Carbono 12
+
+# In[94]:
+
+
+Datos12C41MeV = np.loadtxt('./Datos/Datos12C41Mev.txt')[:,0:2]
+Function(Ab=12, Zb=6, Ap=4, Zp=2, E=41, parametros=[31.46, 2, 0.375, 15.78, 1.926, 0.246, 1.3], Datos=Datos12C41MeV, ylim=(0.01,1000))
+
 
 # In[82]:
 
@@ -199,11 +206,11 @@ Datos12C = np.loadtxt('./Datos/Datos12C.txt')[:,0:2]
 Function(Ab=12, Zb=6, Ap=4, Zp=2, E=139, parametros=[108.1, 1.22, 0.76, 16.9, 1.85, 0.47, 1.26 ], Datos=Datos12C, ylim=(0.01,100))
 
 
-# In[78]:
+# In[96]:
 
 
-Datos12C1 = np.loadtxt('./Datos/Datos12C1.txt')[:,0:2]
-Function(Ab=12, Zb=6, Ap=4, Zp=2, E=104, parametros=[74.2, 1.43, 0.69, 30.2, 1.43, 0.69, 1.26], Datos=Datos12C1, ylim=(0.01,100))
+Datos12C166MeV = np.loadtxt('./Datos/Datos12C166Mev.txt')[:,0:2]
+Function(Ab=12, Zb=6, Ap=4, Zp=2, E=166, parametros=[85.0, 1.34, 0.70, 17.7, 1.77, 0.52, 1.3 ], Datos=Datos12C166MeV, ylim=(0.01,100))
 
 
 # In[83]:
@@ -211,4 +218,12 @@ Function(Ab=12, Zb=6, Ap=4, Zp=2, E=104, parametros=[74.2, 1.43, 0.69, 30.2, 1.4
 
 Datos172Ni = np.loadtxt('./Datos/Datos172Ni.txt')[:,0:2]
 Function(Ab=58, Zb=28, Ap=4, Zp=2, E=172, parametros=[116.4, 1.245, 0.793, 20.52, 1.595, 0.571, 1.4], Datos=Datos172Ni, ylim=(0.0001,1), element='Ni')
+
+
+# In[97]:
+
+
+#Datos6Li = np.loadtxt('./Datos/Datos6Li.txt')[:,0:2]
+#   [116.4, 1.245, 0.793, 20.52, 1.595, 0.571, 1.4]
+#Function(Ab=6, Zb=3, Ap=4, Zp=2, E=50, parametros=[85.98, 1.15, 0.8, 8.01, 1.7, 0.657, 1.3], Datos=Datos6Li, ylim=(0.1,1000), element='Li')
 
