@@ -8,6 +8,7 @@
 # In[142]:
 
 
+#!pip install -r librerias.txt
 import time, datetime
 import matplotlib.pyplot as plt
 from mpmath import *
@@ -39,10 +40,10 @@ class Interaccion():
     self.Proyectil = Proyectil
     self.parametros = parametros
     self.n = n
-    self.a = a      # radio donde el potencial nuclear se desvanece
+    self.a = a      # parametro de escalamiento en el metodo numérico / separación de regiones
     self.Cte = 20.736 * (self.Proyectil.A+self.Blanco.A) / (self.Proyectil.A*self.Blanco.A) # C=(hbar**2)/(2*m)  # es una aproximación # K=6e^2 donde e^2=1.44 MeV fm
 
-    self.E = self.Proyectil.E * self.Blanco.A / (self.Proyectil.A+self.Blanco.A)  #conersión de energía del laboratio al entro de masa
+    self.E = self.Proyectil.E * self.Blanco.A / (self.Proyectil.A+self.Blanco.A)  #conversión de energía del laboratio al entro de masa
     self.k = np.sqrt(self.E/self.Cte)
     
     self.eta  = (self.Proyectil.Z*self.Blanco.Z*1.44) / (2*self.Cte*self.k)
@@ -65,7 +66,7 @@ class Interaccion():
     R, Rp, Rc = R * self.Blanco.A**(1/3), Rp * self.Blanco.A**(1/3), Rc * self.Blanco.A**(1/3) 
     return  self.Vc(r,Rc) - V*self.f(r,R,a) - W*1j*self.f(r,Rp,ap)
 
-  def f(self,r,R,a):  return (1+np.exp((r-R)/a))**(-1)  # wood saxon
+  def f(self,r,R,a):  return (1+np.exp((r-R)/a))**(-1)  # woods-saxon
 
   def Vc(self,r,Rc):
     K = self.Blanco.Z * self.Proyectil.Z * 1.44           # K=6e^2 donde e^2=1.44 MeV fm
@@ -165,7 +166,7 @@ def Plot(theta, y1, title, ylim, parametros, Datos=[], savfig=str(datetime.datet
   plt.ylim(ylim); plt.xlim((0,80))
   plt.xlabel('Angulo ($deg$)'); plt.ylabel(r'Sección Eficaz $(\frac{d\sigma}{d\Omega})/(\frac{d\sigma}{d\Omega})_{RUTH}$')
   plt.savefig('./Imagenes/Colisión-alpha-'+savfig)
-  #plt.show()
+  plt.show()
   
 
 
