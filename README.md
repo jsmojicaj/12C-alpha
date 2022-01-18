@@ -1,7 +1,7 @@
 # Dispersión Elástica <sup>12</sup>C-  α
 ---
 
-Este repositorio contiene la simulación realizada para la colisión entre α y <sup>12</sup>C y los documentos de referencia. 
+Este repositorio contiene el código realizado para modelar la colisión entre α y <sup>12</sup>C en el estudio del sistema, tambien contiene toda la demás documentación de referencia. 
 
 Los datos experimentales y sus respectivos artículos pueden ser consultados en [NRV](http://nrv.jinr.ru/nrv/webnrv/expdata/?tab=elastic).
 
