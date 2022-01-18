@@ -9,7 +9,8 @@ Para ejecutar el codigo primero se deben cargar los datos experimentales y despu
 [Descargar repositorio](https://github.com/krishnamoji/12C-alpha/archive/refs/heads/main.zip)
 
 ```linux
-asd
+git init
+git pull https://github.com/krishnamoji/12C-alpha.git
 ```
 
 
