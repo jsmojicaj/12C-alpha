@@ -8,6 +8,8 @@
 # In[142]:
 
 
+get_ipython().system('pip install -r librerias.txt')
+
 import matplotlib.pyplot as plt
 from mpmath import *
 import numpy as np
@@ -17,7 +19,6 @@ import time, datetime
 import matplotlib as mpl
 from IPython.display import clear_output
 
-get_ipython().system('pip install -r librerias.txt')
 clear_output()
 
 
