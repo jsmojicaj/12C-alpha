@@ -165,7 +165,7 @@ def Plot(theta, y1, title, ylim, parametros, Datos=[], savfig=str(datetime.datet
   plt.ylim(ylim); plt.xlim((0,80))
   plt.xlabel('Angulo ($deg$)'); plt.ylabel(r'Sección Eficaz $(\frac{d\sigma}{d\Omega})/(\frac{d\sigma}{d\Omega})_{RUTH}$')
   plt.savefig('./Imagenes/Colisión-alpha-'+savfig)
-  plt.show()
+  #plt.show()
   
 
 
