@@ -8,14 +8,14 @@
 # In[142]:
 
 
-get_ipython().system('pip install -r librerias.txt')
+import time, datetime, os
+os.system('pip install -r librerias.txt')
 
 import matplotlib.pyplot as plt
 from mpmath import *
 import numpy as np
 from scipy.special import legendre
 from scipy import linalg as lg
-import time, datetime
 import matplotlib as mpl
 from IPython.display import clear_output
 
