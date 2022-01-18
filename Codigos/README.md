@@ -14,13 +14,15 @@ Donde **A** y **Z** son los números de masa y atomicos, el indice **n** y **p**
 
 <h3> Ejecución Local </h3>
 
-Primero se descarga el repositorio desde la página del repositorio, [archivo comprimido](https://github.com/krishnamoji/12C-alpha/archive/refs/heads/main.zip), o desde la linea de comando:
+Primero se descarga el repositorio desde la página del repositorio, [archivo comprimido](https://github.com/krishnamoji/12C-alpha/archive/refs/heads/main.zip), o desde la linea de comando de linux:
 
 ```linux
 git init
 git clone https://github.com/krishnamoji/12C-alpha.git
+cd 12C-alpha/Codigos/
 pip install -r librerias.txt
+python3 SeccionNuclear_alfa_12C.py
 ```
 
-Para ejecutar el 
+Al ejecutar estos codigos se generarán varias imagnes en la carpeta de Imagenes contenida en Codigos. Otra forma de ejecutar el comando es mediante el archivo de JupyterNoteBook [SeccionNuclear_alfa_12C](https://github.com/krishnamoji/12C-alpha/blob/main/Codigos/SeccionNuclear_alfa_12C.ipynb) donde solo es dar click en ejecutar todas las celdas.
 
