@@ -14,7 +14,7 @@ Donde **A** y **Z** son los números de masa y atomicos, el indice **n** y **p**
 
 <h3> Ejecución local </h3>
 
-Primero se obtiene el repositorio por medio de este [archivo comprimido](https://github.com/krishnamoji/12C-alpha/archive/refs/heads/main.zip) o desde la linea de comando:
+Primero se obtiene el repositorio por medio de este [archivo comprimido](https://github.com/krishnamoji/12C-alpha/archive/refs/heads/main.zip), o desde la linea de comando en una carpeta seleccionada:
 
 ```linux
 git init
